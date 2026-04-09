@@ -131,24 +131,31 @@
                 </p>
                 <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.674407078412!2d-2.012218408017222!3d52.59357965879879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487098b13f44abe5%3A0x6f7f7d48817310ec!2s85%20Birchover%20Rd%2C%20Walsall%20WS2%208TX!5e0!3m2!1sen!2suk!4v1775653455504!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <form class="contact__form" action="https://formsubmit.co/your@email.com" method="POST">
+            <form class="contact__form" action="https://formsubmit.co/arjundev13@outlook.com" method="POST">
+                <!-- Honeypot field to prevent spam -->
+                <input type="text" name="bot" style="display: none;">
+                <!--disable captcha-->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="https://plinkton.github.io/Dads-Website/success.html">
+                
                 <div class="contact__fields">
                     <label class="contact__field">
                         <span>Name</span>
-                        <input type="text" name="name" placeholder="Nick Herd">
+                        <input type="text" name="Name" placeholder="Nick Herd">
                     </label>
                     <label class="contact__field">
                         <span>Email</span>
-                        <input type="email" name="email" placeholder="Nick@example.com">
+                        <input type="email" name="Email" placeholder="Nick@example.com">
                     </label>
                     <label class="contact__field">
                         <span>Phone Number</span>
-                        <input type="tel" name="phone" placeholder="123-456-7890">
+                        <input type="tel" name="Phone" placeholder="123-456-7890">
                     </label>
                 </div>
                 <label class="contact__field contact__field--message">
                     <span>Message</span>
-                    <textarea name="message" placeholder="Say Something..."></textarea>
+                    <textarea name="Message" placeholder="Say Something..."></textarea>
                 </label>
                 <button type="submit" class="btn btn--primary contact__button">Send us a message</button>
             </form>
